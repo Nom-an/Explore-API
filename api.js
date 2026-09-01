@@ -10,3 +10,18 @@ document.getElementById('btn'),addEventListener('click', function(){
 })
 
 })
+
+document.getElementById('loadPost').addEventListener('click', function(){
+
+    const url = 'https://jsonplaceholder.typicode.com/posts';
+
+    fetch(url)
+    .then((r)=>{
+        return r.json();
+    })
+    .then((d)=>{
+        return console.log(d);
+    })
+    
+    
+})
