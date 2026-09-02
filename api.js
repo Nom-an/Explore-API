@@ -25,6 +25,7 @@ document.getElementById('btn'),addEventListener('click', function(){
     
     
 // })
+// fetch posts 
 
 document.getElementById('loadPost').addEventListener('click', function(){
     const url ='https://jsonplaceholder.typicode.com/posts';
