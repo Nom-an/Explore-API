@@ -27,15 +27,15 @@ document.getElementById('btn'),addEventListener('click', function(){
 // })
 // fetch posts 
 
-document.getElementById('loadPost').addEventListener('click', function(){
-    const url ='https://jsonplaceholder.typicode.com/posts';
-    fetch(url)
-    .then((res)=>res.json())
-    .then((json)=> displayPost(json));
-})
+// document.getElementById('loadPost').addEventListener('click', function(){
+//     const url ='https://jsonplaceholder.typicode.com/posts';
+//     fetch(url)
+//     .then((res)=>res.json())
+//     .then((json)=> displayPost(json));
+// })
 
-const displayPost = (posts)=>{
-    posts.forEach((post)=>{
-        console.log(post);
-    })
-}
+// const displayPost = (posts)=>{
+//     posts.forEach((post)=>{
+//         console.log(post);
+//     })
+// }
