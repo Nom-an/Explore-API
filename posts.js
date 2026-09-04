@@ -2,24 +2,34 @@ document.getElementById('loadPost').addEventListener('click', function(){
     const url = 'https://jsonplaceholder.typicode.com/posts';
 
     fetch(url)
-    .then((res)=> res.json())
-    .then((json)=>displayPost(json) )
+    .then((res)=>{ return res.json()})
+    .then((json)=>displayPost(json));
+
+    
 })
 
-const displayPost = (posts)=>{
-    // for(let post of posts){
-    //     console.log(post);
-    // }
 
-    const postContainer = document.getElementById('post-container');
+
+const displayPost = (posts)=>{
+
+const postContainer = document.getElementById('post-container');
+postContainer.innerHTML = "";
 
     posts.forEach((post)=>{
-        // console.log(post.title);
+        const postCard = document.createElement('div');
+        postCard.innerHTML= `
+        
+        
+        
+        
+        
+        `
 
-        const li = document.createElement('li');
-        li.innerText=post.title;
-        console.log(li);
 
-        postContainer.appendChild(li);
+
+
+
+
     })
+
 }
