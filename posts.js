@@ -18,12 +18,18 @@ postContainer.innerHTML = "";
     posts.forEach((post)=>{
         const postCard = document.createElement('div');
         postCard.innerHTML= `
-        
+                <div class="post-card">
+         <h3>${post.title}</h3>
+         <p>${post.body}</p>
+
+        </div>
         
         
         
         
         `
+
+        postContainer.appendChild(postCard);
 
 
 

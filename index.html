@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        #post-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+
+
+        }
+
+
+        .post-card{
+            box-shadow: 1px 2px 2px 5px gray;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <button id="btn">load data</button>
     <button id="loadPost">Load Post</button>
 
-    <div id="post-Container">
-        
+    <div id="post-container">
+
 
 
     </div>
