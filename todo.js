@@ -34,7 +34,7 @@ const getTodo = (todos)=>{
          <div class="todo-card">
             <h2>${todo.id}</h2>
             <h3>${todo.title}</h3>
-            <p>${todo.completed}</p>
+            <p>${todo.completed == true ? ` True <i class="fa-solid fa-square-check"></i> ` : `False <i class="fa-regular fa-square-check"></i>`} </p>
          </div>
         
         `
